@@ -1,13 +1,13 @@
 Wordpress with XDebug for Docker
 ================================
 
-**It is intended for Development environment only. Please do not use this in Production environment. Please you the [official Docker Wordpress image](https://hub.docker.com/_/wordpress) at Production instead.**
+**It is intended for development environment only. Please do not use this in production environment. Please you the [official Docker Wordpress image](https://hub.docker.com/_/wordpress) at production instead.**
 
 XDebug has been added to the official Wordpress Docker image here. The tag of the image corresponds to the tag of the official Wordpress image.
 
-E.g. `wpdiaries/wordpress-xdebug:5.5.1-php7.4-apache` means that the image has been created based on the image `wordpress:5.5.1-php7.4-apache`.
+E.g. `wpdiaries/wordpress-xdebug:5.6-php8.0-apache` means that the image has been created based on the image `wordpress:5.6-php8.0-apache`.
 
-But if you do not want to use the precompiled image but wish to build the image yourself, you can clone this Git repository with the command:
+But if you do not want to use the precompiled image, but wish to build the image yourself, you can clone this Git repository with the command:
 
 ```
 git clone https://github.com/wpdiaries/wordpress-xdebug.git xdebug
@@ -79,7 +79,7 @@ networks:
   backend-wpd:
 ```
 
-Please not that we have added the following environment variable to your `docker-compose.yml`:
+Please notice that we have added the following environment variable to your `docker-compose.yml`:
 ```
 XDEBUG_CONFIG: remote_host=192.168.1.2
 ```
