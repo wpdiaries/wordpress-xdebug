@@ -9,7 +9,7 @@ RUN apt-get update && \
 # Available branches of XDebug could be seen here:
 # https://github.com/xdebug/xdebug/branches
 RUN cd /tmp && \
-    git clone git://github.com/xdebug/xdebug.git && \
+    git clone https://github.com/xdebug/xdebug.git && \
     cd xdebug && \
     git checkout xdebug_3_0 && \
     phpize && \
