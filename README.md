@@ -1,9 +1,9 @@
-Wordpress with XDebug for Docker
+WordPress with XDebug for Docker
 ================================
 
-**It is intended for development environment only. Please do not use this in production environment. Please you the [official Docker Wordpress image](https://hub.docker.com/_/wordpress) at production instead.**
+**It is intended for development environment only. Please do not use this in production environment. Please you the [official Docker WordPress image](https://hub.docker.com/_/wordpress) at production instead.**
 
-XDebug has been added to the official Wordpress Docker image here. The tag of the image corresponds to the tag of the official Wordpress image.
+XDebug has been added to the official WordPress Docker image here. The tag of the image corresponds to the tag of the official WordPress image.
 
 E.g. `wpdiaries/wordpress-xdebug:6.1.1-php8.1-apache` means that the image has been created based on the image `wordpress:6.1.1-php8.1-apache`.
 
