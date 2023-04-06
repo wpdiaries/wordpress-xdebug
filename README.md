@@ -52,7 +52,7 @@ services:
 
   db:
     container_name: mysql-wpd
-    image: mysql:8.0.20
+    image: mysql:8.0.32
     command: --default-authentication-plugin=mysql_native_password
     restart: always
 
