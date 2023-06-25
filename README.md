@@ -37,7 +37,7 @@ services:
       WORDPRESS_DB_USER: mydbuser
       WORDPRESS_DB_PASSWORD: mydbpassword
       # Set the XDEBUG_CONFIG as described here: https://xdebug.org/docs/remote
-      XDEBUG_CONFIG: remote_host=192.168.1.2
+      XDEBUG_CONFIG: client_host=192.168.1.2
 
     depends_on:
       - db
