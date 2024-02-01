@@ -37,7 +37,7 @@ services:
       WORDPRESS_DB_USER: mydbuser
       WORDPRESS_DB_PASSWORD: mydbpassword
       # Set the XDEBUG_CONFIG as described here: https://xdebug.org/docs/remote
-      XDEBUG_CONFIG: client_host=192.168.1.2
+      XDEBUG_CONFIG: client_host=host.docker.internal
 
     depends_on:
       - db
@@ -81,9 +81,9 @@ networks:
 
 Please notice that we have added the following environment variable to your `docker-compose.yml`:
 ```
-XDEBUG_CONFIG: remote_host=192.168.1.2
+XDEBUG_CONFIG: remote_host=host.docker.internal
 ```
-, where instead of `192.168.1.2` you need to use the IP address of your host-machine (where you have your IDE, e.g. `PhpStorm` installed).
+, DNS name `host.docker.internal` automatically resolves to the internal IP address used by the host, if want to update replace `host.docker.internal` with the IP address of your host-machine (where you have your IDE, e.g. `PhpStorm` installed).
 
 The variable `XDEBUG_CONFIG` is an XDebug environment variable. It allows you to add or redefine some XDebug configuration parameters. More information could be found [here](https://xdebug.org/docs/remote).
 
