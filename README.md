@@ -5,7 +5,7 @@ WordPress with XDebug for Docker
 
 XDebug has been added to the official WordPress Docker image here. The tag of the image corresponds to the tag of the official WordPress image.
 
-For example, `wpdiaries/wordpress-xdebug:6.4.3-php8.3-apache` means that the image has been created based on the image `wordpress:6.4.3-php8.3-apache`.
+For example, `wpdiaries/wordpress-xdebug:6.5.0-php8.3-apache` means that the image has been created based on the image `wordpress:6.5.0-php8.3-apache`.
 
 But if you do not want to use the precompiled image, but wish to build the image yourself, you can clone this Git repository with the command:
 
