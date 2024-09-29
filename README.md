@@ -13,11 +13,9 @@ But if you do not want to use the precompiled image, but wish to build the image
 git clone https://github.com/wpdiaries/wordpress-xdebug.git xdebug
 ```
 
-And then you could use a `docker-compose.yml` similar to this one (of course you would need to substitute your own parameters where necessary):
+And then you could use a `compose.yaml` similar to this one (of course you would need to substitute your own parameters where necessary):
 
 ```yaml
-version: '3.8'
-
 services:
 
   wordpress:
@@ -79,7 +77,7 @@ networks:
   backend-wpd:
 ```
 
-Please notice that we have added the following environment variable to your `docker-compose.yml`:
+Please notice that we have added the following environment variable to your `compose.yaml`:
 ```
 XDEBUG_CONFIG: remote_host=192.168.1.2
 ```
